@@ -2,7 +2,7 @@
  <img src="https://i.imgur.com/cLOWZFd.jpg" height="80%" width="80%" alt="VM logo"/>
 </p>
 
-<h1>Creating an IP reservation</h1>
+<h1>Creating a DHCP relay</h1>
 
 
 <h2>Description</h2>
@@ -21,49 +21,61 @@ Welcome to another setup demonstration! Today, we'll be showcasing how to set up
 
 
 <br />
-From the Hyper-V manager, Select your host server. In this example we will highlight ours which is CORPSERVER. Next we will double-click our DHCP server to connect to the VM.
+From Server Manager, select Tools > Routing and Remote Access.
+Expand IPv4.
  <br/>
-<img src="https://i.imgur.com/xuHGUAu.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/S2CseAY.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
-Once our DHCP VM connects. Open server manager then select tools> DHCP
+Expand IPv4. Right-click General and select New Routing Protocol.
  <br/>
-<img src="https://i.imgur.com/hm0Nh6l.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/sMHK1Or.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
-On the left plane expand your domain > IPV4 > Scope
+Select DHCP Relay Agent and then select OK.
 
  <br/>
-<img src="https://i.imgur.com/30UkFYa.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/KVEBXfg.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
-Right-Click Reservations and select new reservation.
+From the left pane, right-click DHCP Relay Agent and select New Interface.
+Select NetTeam and then select OK.
+
 <br/>
-<img src="https://i.imgur.com/KsxGpCc.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/JlEw6TU.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
-In the Reservation name field, enter a reservation name
-In the IP address field, enter the IP address for the reservation.
-In the MAC address field enter the MAC address of your device.
-Under supported types select DHCP only. When you are done select Add to create the client reservation.
-Select Yes to the DHCP prompt.
-
+Make sure Relay DHCP packets is selected.
+Set the boot threshold to 0 (zero).
+Select OK.
 
  <br/>
-<img src="https://i.imgur.com/mS0hoQR.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/lPYyMCk.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
- That's it! We are finished! You will now see the completed reservation for our device.
- <br/>
-<img src="https://i.imgur.com/SO3clD9.png" height="80%" width="80%" alt="DHCP"/>
-<br />
-<br />
- I hope you enjoyed this demonstration.
- <br/>
-<img src="https://i.imgur.com/yJKNCtj.jpg" height="80%" width="80%" alt="DHCP"/>
-<br />
-<br />
+Right-click DHCP Relay Agent and select Properties.
 
+ <br/>
+<img src="https://i.imgur.com/GynvPMW.png" height="80%" width="80%" alt="DHCP"/>
+<br />
+<br />
+In the Server address field, enter the IP address of the DHCP server. The IP address of the DHCP server I am targeting is 192.168.0.14.
+Select Add and then select OK.
+ <br/>
+<img src="https://i.imgur.com/GEFKCol.png" height="80%" width="80%" alt="DHCP"/>
+<br />
+<br />
+Lastly we verify we're getting an IP address from the DHCP server. I do a quick /ipconfig at the powershell prompt and get an APIPA address. No worries, all I have to do is follow up with a /ipconfig /release & an ipconfig /renew and VIOLA I get a functional IP address.
+ <br/>
+<img src="https://i.imgur.com/kLulX91.png" height="80%" width="80%" alt="DHCP"/>
+
+<br />
+<br />
+Lastly we verify we're getting an IP address from the DHCP server. I do a quick /ipconfig at the powershell prompt and get an APIPA address. No worries, all I have to do is follow up with a /ipconfig /release & an ipconfig /renew and VIOLA I get a functional IP address.
+ <br/>
+<img src="https://i.imgur.com/kLulX91.png" height="80%" width="80%" alt="DHCP"/>
+
+ 
 </p>
 
 <!--
