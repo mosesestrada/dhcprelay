@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://i.imgur.com/cLOWZFd.jpg" height="80%" width="80%" alt="VM logo"/>
+ <img src="https://i.imgur.com/WsQoR9W.jpg" height="80%" width="80%" alt="VM logo"/>
 </p>
 
 <h1>Creating a DHCP relay</h1>
@@ -73,7 +73,7 @@ Lastly we verify we're getting an IP address from the DHCP server. I do a quick 
 <br />
 Hope you enjoyed this demonstration.
  <br/>
-<img src="https://i.imgur.com/kLulX91.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/d3518PR.jpg" height="80%" width="80%" alt="DHCP"/>
 
  
 </p>
