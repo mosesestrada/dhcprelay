@@ -71,7 +71,7 @@ Lastly we verify we're getting an IP address from the DHCP server. I do a quick 
 
 <br />
 <br />
-Lastly we verify we're getting an IP address from the DHCP server. I do a quick /ipconfig at the powershell prompt and get an APIPA address. No worries, all I have to do is follow up with a /ipconfig /release & an ipconfig /renew and VIOLA I get a functional IP address.
+Hope you enjoyed this demonstration.
  <br/>
 <img src="https://i.imgur.com/kLulX91.png" height="80%" width="80%" alt="DHCP"/>
 
