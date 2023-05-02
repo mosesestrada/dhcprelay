@@ -73,7 +73,7 @@ Lastly we verify we're getting an IP address from the DHCP server. I do a quick 
 <br />
 Hope you enjoyed this demonstration.
  <br/>
-<img src="https://i.imgur.com/d3518PR.jpg" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/dJzDtPN.jpg" height="80%" width="80%" alt="DHCP"/>
 
  
 </p>
