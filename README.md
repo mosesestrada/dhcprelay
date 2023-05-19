@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://i.imgur.com/WsQoR9W.jpg" height="80%" width="80%" alt="VM logo"/>
+ <img src="https://i.imgur.com/d7mFwId.jpg" height="80%" width="80%" alt="Relaylogo"/>
 </p>
 
 <h1>Creating a DHCP relay</h1>
@@ -24,25 +24,25 @@ Welcome to another setup demonstration! Today, we'll be showcasing how to set up
 From Server Manager, select Tools > Routing and Remote Access.
 Expand IPv4.
  <br/>
-<img src="https://i.imgur.com/S2CseAY.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/6dDUa19.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 Expand IPv4. Right-click General and select New Routing Protocol.
  <br/>
-<img src="https://i.imgur.com/sMHK1Or.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/jlMESV2.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 Select DHCP Relay Agent and then select OK.
 
  <br/>
-<img src="https://i.imgur.com/KVEBXfg.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/WlTecLB.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 From the left pane, right-click DHCP Relay Agent and select New Interface.
 Select NetTeam and then select OK.
 
 <br/>
-<img src="https://i.imgur.com/JlEw6TU.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/HhPWF1X.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 Make sure Relay DHCP packets is selected.
@@ -56,24 +56,24 @@ Select OK.
 Right-click DHCP Relay Agent and select Properties.
 
  <br/>
-<img src="https://i.imgur.com/GynvPMW.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/aUCy5WU.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 In the Server address field, enter the IP address of the DHCP server. The IP address of the DHCP server I am targeting is 192.168.0.14.
 Select Add and then select OK.
  <br/>
-<img src="https://i.imgur.com/GEFKCol.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/FjhSYxK.png" height="80%" width="80%" alt="DHCP"/>
 <br />
 <br />
 Lastly we verify we're getting an IP address from the DHCP server. I do a quick /ipconfig at the powershell prompt and get an APIPA address. No worries, all I have to do is follow up with a /ipconfig /release & an ipconfig /renew and VIOLA I get a functional IP address.
  <br/>
-<img src="https://i.imgur.com/kLulX91.png" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/Q4TE3ec.png" height="80%" width="80%" alt="DHCP"/>
 
 <br />
 <br />
 Hope you enjoyed this demonstration.
  <br/>
-<img src="https://i.imgur.com/dJzDtPN.jpg" height="80%" width="80%" alt="DHCP"/>
+<img src="https://i.imgur.com/DMi8zfm.jpg" height="80%" width="80%" alt="DHCP"/>
 
  
 </p>
