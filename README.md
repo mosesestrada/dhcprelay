@@ -2,7 +2,7 @@
  <img src="https://i.imgur.com/d7mFwId.jpg" height="80%" width="80%" alt="Relaylogo"/>
 </p>
 
-<h1>Creating a DHCP relay</h1>
+<h1>Creating a DHCP relay agent</h1>
 
 
 <h2>Description</h2>
